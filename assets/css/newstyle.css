@@ -1,11 +1,12 @@
-
 * {
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body { 
+body {
     /* background-color: lightgrey; */
-    background-image: url("../images/vintage-concrete.gif");
+    background: black;
+    background-image: url("../images/techback.jpg");
+    background-repeat: no-repeat;
     font-size: 20px;
     line-height: 34px;
     font-family: 'arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -13,25 +14,31 @@ body {
     color: #777;
     margin-bottom: 750px;
 }
+
 /*This sets up anchors to not be underlined, and for text to change to yellow on mouse hover  */
-a { text-decoration: none;
+
+a {
+    text-decoration: none;
 }
 
 a:hover {
     color: yellow;
 }
 
-
-
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     margin-bottom: 20px;
 }
+
 p:last-child {
     margin-bottom: 0;
 }
 
-h1, h2 {
-    font-family: Georgia, Times,'Times New Roman', serif;
+h1,
+h2 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
     color: #4daaa5;
 }
@@ -43,10 +50,10 @@ h1 {
     padding-bottom: 20px;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-size: 22px;
 }
-
 
 .container {
     width: 100%;
@@ -59,7 +66,7 @@ h2, h3 {
 /*header*/
 
 #mainhead {
-    position: fixed;
+    /* position: fixed; */
     overflow: hidden;
     margin: 0 0 30px 0;
     width: 100%;
@@ -68,7 +75,6 @@ h2, h3 {
     color: #fff;
     border-bottom: 2px solid #ccc;
     padding: 15px;
-    
 }
 
 #logo {
@@ -103,28 +109,28 @@ nav a {
 nav a:first-child {
     border-left: 0 none;
 }
+
 /*Main*/
+
 #maincontainer {
-    position: absolute;
+    /* position: absolute; */
     top: 150px;
     left: 30px;
     Height: Auto;
     Width: 650px;
     background-color: white;
-    Padding: 15px; 
+    Padding: 15px;
     margin-bottom: 150px;
-    z-index: 1 ;
+    z-index: 1;
 }
-
 
 #contact-form {
-padding: 15px;
-line-height: 5ch;
+    padding: 15px;
+    line-height: 5ch;
 }
 
-
 .sidebar {
-    position: absolute;
+    /* position: absolute; */
     float: right;
     top: 150px;
     left: 720px;
@@ -152,45 +158,55 @@ line-height: 5ch;
     float: left;
     margin-right: 25px;
 }
+
 .project {
     width: 190px;
     float: left;
     margin: 15px;
     margin: 10px;
 }
-.description {
-        position: relative;
-        width: 100%;
-        top: -120px;
-        left: 0;
-        background-color: rgba(0, 0, 0, .6);
-        color: rgb(212, 250, 0);
-        padding: 5px;
-        Border-top: 3px solid rgb(212,250,0);
-        Border-bottom: 3px solid rgb(212,250,0); 
-    }
 
-  #contact-form ul {
+.description {
+    /* position: relative; */
+    width: 100%;
+    top: -120px;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    color: rgb(212, 250, 0);
+    padding: 5px;
+    Border-top: 3px solid rgb(212, 250, 0);
+    Border-bottom: 3px solid rgb(212, 250, 0);
+}
+
+#contact-form ul {
     margin-bottom: 25px;
-  } 
+}
+
 #contact-form li {
     margin-bottom: 10px;
 }
 
-label, input[type=text], input[type=email], textarea{
+label,
+input[type=text],
+input[type=email],
+textarea {
     width: 100%;
     display: block;
 }
-input[type=text], input[type=email], textarea{
+
+input[type=text],
+input[type=email],
+textarea {
     height: 40px;
     border: 1px solid #ddd;
     padding: 0 8px;
     font-size: 15px;
 }
 
-textarea{
+textarea {
     height: 200px;
 }
+
 input[type=submit] {
     background-color: #4aaaaf;
     border: 0 none;
@@ -198,7 +214,7 @@ input[type=submit] {
     font-size: 14px;
     padding: 12px;
     margin-bottom: 20px;
-    cursor: pointer; 
+    cursor: pointer;
     width: 100px;
     text-align: center;
     letter-spacing: 0.2em;
@@ -209,7 +225,7 @@ footer {
     Bottom: 0;
     Left: 0;
     Right: 0;
-    background-color:darkgray;
+    background-color: darkgray;
     color: white;
     width: 100%;
     height: 70px;
@@ -217,27 +233,26 @@ footer {
     text-align: center;
     border-top: 5px solid #4daaa5;
     line-height: 45px;
-    z-index : 99;
+    z-index: 99;
     /* -ms-text-size-adjust: auto;  */
 }
 
 @media screen and (max-width: 969px) {
     .container {
-    position: static;
-    width: 100%;
+        /* position: static; */
+        width: 100%;
     }
     #maincontainer {
-        position: absolute;
+        /* position: absolute; */
         width: 450px;
         top: 150px;
         margin: 100px 0px 50px 0px;
     }
     .myimage {
-        float: none; 
+        float: none;
     }
-
     .sidebar {
-        position: absolute;
+        /* position: absolute; */
         margin: 100px 15px 50px 0px;
         top: 150px;
         left: 500px;
@@ -245,58 +260,51 @@ footer {
     .project {
         float: none;
     }
-}    
+}
 
 @media screen and (max-width: 768px) {
     .myimage {
         float: left;
-        
     }
     #maincontainer {
         Width: 450px;
     }
-
-
     .sidebar {
-        position: absolute;
+        /* position: absolute; */
         margin: 100px 15px 200px 0px;
-        left: 30px; 
+        left: 30px;
         margin-bottom: 200px;
     }
-
     .project {
         float: left;
     }
-
     #connect1 {
         top: 1000px;
     }
-
     #connect2 {
         top: 1350px;
     }
-
     #connect3 {
         top: 900px;
     }
-
-    @media screen and (max-width: 640px) {
-        #logo {
-            float: none;
-        }
-        nav {
-            float: left;
-            margin-top: 2px;
-        }
-        .project {
-            float: none;
-        }
-        #connect2 {
-            top: 2000px;
-        }
-        .sidebar {
-            width: 100%;
-            position: normal;
-        }
-
 }
+
+@media screen and (max-width: 640px) {
+    #logo {
+        float: none;
+    }
+    nav {
+        float: left;
+        margin-top: 2px;
+    }
+    .project {
+        float: none;
+    }
+    #connect2 {
+        top: 2000px;
+    }
+    .sidebar {
+        width: 100%;
+    }
+}
+
